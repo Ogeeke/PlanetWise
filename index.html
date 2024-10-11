@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MyLogo</h1>
+            </div>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+                <ul id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <p class="small-text">Protecting Nature's Balance</p>
+            <h1 class="bold-text">Environmental Health Matters</h1>
+            <p class="medium-text">Join the Movement for a Greener Future</p>
+        </div>
+    </div>
+    
+
+    <section id="featured">
+        <h3>Featured Articles</h3>
+        <article>
+            <h4><a href="blog-post1.html">How to Reduce Your Carbon Footprint</a></h4>
+            <p>Learn the simple steps you can take to minimize your impact on the environment.</p>
+        </article>
+        <article>
+            <h4><a href="blog-post2.html">The Importance of Biodiversity</a></h4>
+            <p>Explore why biodiversity is crucial for maintaining ecosystems.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Environmental Blog | All Rights Reserved</p>
+    </footer>
+
+
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
+
